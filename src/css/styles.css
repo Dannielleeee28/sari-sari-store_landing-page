@@ -180,6 +180,21 @@ header .nav-bar{
     align-items: center;
     align-content: center;
 }
+.glide{
+    width: 800px;
+    max-width: 600px;
+}
+.glide__slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+}
+.glide__slide h3{
+    margin-bottom: 25px;
+}
 .contact {
     background-color: var(--primary-color);
     display: flex;

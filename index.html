@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/glide.core.min.css">
+    <link rel="stylesheet" href="src/css/glide.theme.min.css">
     <link rel="shortcut icon" href="images/dadds-logo.png" type="image/x-icon">
 </head>
 <body>
@@ -61,30 +63,74 @@
 
         <section class="services-section" id="services">
         <h2>Our Services</h2>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <h3>Frozen Goods</h3>
+                            <p>Freshly frozen, ready for your convenience.</p>
+                        </li>
+                        <li class="glide__slide">
+                            <h3>Beverages & Snacks</h3>
+                            <p>Your daily dose of refreshment and treats.</p>
 
-            <h3>Frozen Goods</h3>
-            <p>Freshly frozen, ready for your convenience.</p>
-
-            <h3>Beverages & Snacks</h3>
-            <p>Your daily dose of refreshment and treats.</p>
-
-            <h3>Household & Cleaning Supplies</h3>
-            <p>Keep your home sparkling clean and organized.</p>
-                
-            <h3>Health & Personal Care</h3>
-            <p>Essentials for your well-being and daily routine.</p>
+                        </li>
+                        <li class="glide__slide">
+                            <h3>Household & Cleaning Supplies</h3>
+                            <p>Keep your home sparkling clean and organized.</p>
+                        </li>
+                        <li class="glide__slide">
+                            <h3>Health & Personal Care</h3>
+                            <p>Essentials for your well-being and daily routine.</p>
                     
-            <h3>School Supplies</h3>
-            <p>All you need for learning and creativity.</p>
+                        </li>
+                        <li class="glide__slide">
+                            <h3>School Supplies</h3>
+                            <p>All you need for learning and creativity.</p>
 
-            <h3>GCash (Cash-In and Cash-Out)</h3>
-            <p>Convenient mobile money transactions.</p>
+                        </li>
+                        <li class="glide__slide">
+                            <h3>GCash (Cash-In and Cash-Out)</h3>
+                            <p>Convenient mobile money transactions.</p>
+                        </li>
+                        <li class="glide__slide">
+                            <h3>Printing, Xerox & Scanning</h3>
+                            <p>Your one-stop shop for document needs.</p>
+                        </li>
+                        <li class="glide__slide">
+                            <h3>Retail & Wholesale Pricing</h3>
+                            <p>Great deals for both individual and bulk purchases.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                 <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                    <button class="glide__bullet" data-glide-dir="=4"></button>
+                    <button class="glide__bullet" data-glide-dir="=5"></button>
+                    <button class="glide__bullet" data-glide-dir="=6"></button>
+                    <button class="glide__bullet" data-glide-dir="=7"></button>
+                </div>
+            </div>
+ 
 
-            <h3>Printing, Xerox & Scanning</h3>
-            <p>Your one-stop shop for document needs.</p>
 
-            <h3>Retail & Wholesale Pricing</h3>
-            <p>Great deals for both individual and bulk purchases.</p>
+
+
+
+
+
+
+
+
+
+
         </section>
 
         <section class="contact">
@@ -128,5 +174,26 @@
         </section>
     </main>    
     <script src="src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide').mount()
+    </script>
+    <script>
+        var select = document.querySelector('#options-type-select')
+
+        var glide = new Glide('#options-type', {
+        type: select.value,
+        focusAt: 'center',
+        perView: 3
+        })
+
+        select.addEventListener('change', function (event) {
+        glide.update({
+            type: event.target.value
+        })
+        })
+
+        glide.mount()
+    </script>
 </body>
 </html>
