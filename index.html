@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DADD's Sari-sari Store</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/dadds-logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="/images/dadds-logo.png" alt="DADD's Logo">
+                </a>
+                <h1><span>DADD'S</span> SARI-SARI STORE</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active-page">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="store-location">
+                <a href="https://maps.app.goo.gl/UUvsV5in4GVxnkWe8" target="_blank">Store Location</a>
+            </div>    
+        </div>
+    </header>
+    <main>
+        <section class="home" id="home" >
+            <div class="home-logo">
+                <img src="/images/dadds-logo.png" alt="Dadd's Logo">
+            </div>
+            <div class="home-content">
+                <h3>Hi,<br></h3>
+                <h1>I'm <a href="https://www.facebook.com/profile.php?id=100064165448505" target="_blank"><span>Dadd's</span></a><br>Sari-sari Store<br></h1>
+                <p>Your Neighborhood Essential.</p>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="/images/family.jpg" alt="Dadd's Family">
+            </div>
+            <div class="about-content">
+                <h2>About DADD'S SARI-SARI STORE</h2>
+                <p>Born out of the extraordinary circumstances of 2020, DADD'S SARI-SARI STORE isn't just a place to shop – it's a testament to resilience, dedication, and the power of perseverance. While the world grappled with uncertainty during the pandemic, we embarked on our own ambitious journey.</p><br>
+
+                <p>From the very beginning, our path was anything but easy. We vividly remember the "super hassle" of assembling every single rack, meticulously encoding countless product barcodes into our POS system, often retrying multiple times amidst the confusion. There were moments of doubt and frustration, but each challenge only fueled our determination to bring affordable and quality groceries to our community. Simultaneously, we tirelessly connected with numerous distributors, fighting to secure the lowest possible prices so we could offer competitive retail and wholesale options to you.</p><br>
+
+                <p>What started in a period of global challenge has blossomed into a store built on hard work and a deep commitment to our customers. We poured our hearts into every detail, driven by the belief that even in tough times, essential goods should be accessible and shopping should be a reliable experience.</p><br>
+
+                <p class="last-p">Today, DADD'S SARI-SARI STORE stands proud, a beacon of that initial dream. We continue to strive for excellence, constantly seeking ways to improve and serve you better. Every shelf filled and every product scanned carries the story of our humble, yet ambitious, beginnings. Thank you for being a part of our journey.</p><br>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+        <h2>Our Services</h2>
+
+            <h3>Frozen Goods</h3>
+            <p>Freshly frozen, ready for your convenience.</p>
+
+            <h3>Beverages & Snacks</h3>
+            <p>Your daily dose of refreshment and treats.</p>
+
+            <h3>Household & Cleaning Supplies</h3>
+            <p>Keep your home sparkling clean and organized.</p>
+                
+            <h3>Health & Personal Care</h3>
+            <p>Essentials for your well-being and daily routine.</p>
+                    
+            <h3>School Supplies</h3>
+            <p>All you need for learning and creativity.</p>
+
+            <h3>GCash (Cash-In and Cash-Out)</h3>
+            <p>Convenient mobile money transactions.</p>
+
+            <h3>Printing, Xerox & Scanning</h3>
+            <p>Your one-stop shop for document needs.</p>
+
+            <h3>Retail & Wholesale Pricing</h3>
+            <p>Great deals for both individual and bulk purchases.</p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us!</h2>
+            <form action="index.php" method="post" class="form">
+                
+                <div class="form-group">
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName" name="fName" placeholder="Enter First Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lName">Last Name:</label>
+                    <input type="text" id="lName" name="lName" placeholder="Enter Last Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="msg">Your Thoughts:</label>
+                    <textarea name="msg" id="msg" placeholder="Let me hear your thoughts" rows="5"></textarea>
+                </div>
+
+                <input type="submit" name="submit" id="submit" value="Submit">
+
+            </form>
+        </section>
+
+        <section class="footer">
+            <div class="footer-content">
+                <p>Copyright &copy; 2025 DADD's Sari-Sari Store. All rights reserved.</p>
+            </div>
+            <div class="tech-stacks">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+            </div>
+        </section>
+    </main>    
+    <script src="/src/js/script.js"></script>
+</body>
+</html>
