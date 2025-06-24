@@ -264,39 +264,9 @@ textarea {
 .footer .tech-stacks i{
     font-size: 25px;
 }
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  z-index: 110;
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  font-size: 26px;
-  color: var(--background-color);
+.nav-links-side{
+    display: none;
 }
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 250px;
-  height: 100vh;
-  background-color: var(--secondary-color);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px;
-  transition: right 0.3s ease-in-out;
-  z-index: 110;
-}
-.sidebar a {
-  margin: 20px 0;
-  color: var(--background-color);
-  font-size: 18px;
-}
-.sidebar .close-menu {
-  align-self: flex-end;
-  font-size: 24px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  color: var(--background-color);
+.menuOpen{
+    display: none;
 }

@@ -1,11 +1,11 @@
-const menuToggle = document.querySelector('.menu-toggle i');
-const sidebar = document.querySelector('.sidebar');
-const closeMenu = document.querySelector('.close-menu');
+const sideBar = document.querySelector('.nav-links-side');
+const menuOpen = document.querySelector('.menuOpen i');
+const menuClose = document.querySelector('.nav-links-side i');
 
-menuToggle.addEventListener('click', () => {
-  sidebar.style.right = '0';
-});
+menuOpen.addEventListener('click', () => {
+  sideBar.style.right = '0%';
+})
 
-closeMenu.addEventListener('click', () => {
-  sidebar.style.right = '-100%';
+menuClose.addEventListener('click', () => {
+  sideBar.style.right = '-100%';
 });
